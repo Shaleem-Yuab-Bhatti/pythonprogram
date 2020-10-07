@@ -1,0 +1,12 @@
+
+d =  [
+    {'id': 1, 'success': True, 'name': 'Lary'}, 
+    {'id': 2, 'success': False, 'name': 'Rabi'}, 
+    {'id': 3, 'success': True, 'name': 'Alex'}
+]
+count = 0
+for i in d:
+    for k,v in i.items():
+        if k == "success" and v == True:
+            count += 1
+print(count)
